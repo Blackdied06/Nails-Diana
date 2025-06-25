@@ -1,1 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Uñas Elegantes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #fceff9, #fff);
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #f9c5d1, #f7b2d9);
+      padding: 2rem 1rem;
+      text-align: center;
+      animation: fadeInDown 1.5s ease-in-out;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #fff8f8;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 1rem;
+      text-align: center;
+      animation: fadeIn 2s ease-in;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .service-card {
+      background-color: #fff;
+      border-radius: 16px;
+      padding: 1rem;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-card h3 {
+      color: #c71585;
+      margin-bottom: 0.5rem;
+    }
+
+    .cta-button {
+      margin-top: 2rem;
+    }
+
+    .cta-button a {
+      background-color: #c71585;
+      color: #fff;
+      text-decoration: none;
+      padding: 1rem 2rem;
+      border-radius: 30px;
+      font-size: 1.2rem;
+      transition: background 0.3s;
+      box-shadow: 0 6px 15px rgba(199, 21, 133, 0.3);
+      animation: bounceIn 2s ease;
+    }
+
+    .cta-button a:hover {
+      background-color: #a50f6e;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      color: #999;
+    }
+
+    /* Animaciones */
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes bounceIn {
+      0% { transform: scale(0.8); opacity: 0; }
+      60% { transform: scale(1.1); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Uñas Elegantes</h1>
+    <p>¡Embellece tus manos con estilo y elegancia!</p>
+  </header>
+
+  <div class="container">
+    <h2>Servicios</h2>
+    <div class="services">
+      <div class="service-card">
+        <h3>Manicure</h3>
+        <p>Cuidado y diseño profesional de tus uñas.</p>
+      </div>
+      <div class="service-card">
+        <h3>Uñas Acrílicas</h3>
+        <p>Diseños únicos y duraderos con acabado impecable.</p>
+      </div>
+      <div class="service-card">
+        <h3>Gelish</h3>
+        <p>Colores intensos y duraderos con brillo espectacular.</p>
+      </div>
+      <div class="service-card">
+        <h3>Diseños Personalizados</h3>
+        <p>Arte en tus uñas según tu estilo y ocasión.</p>
+      </div>
+    </div>
+
+    <div class="cta-button">
+      <a href="https://wa.me/50512345678?text=Hola%2C%20quiero%20agendar%20una%20cita%20para%20u%C3%B1as%20%F0%9F%92%85" target="_blank">
+        💅 Agendar tu cita por WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Uñas Elegantes. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
 
